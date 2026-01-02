@@ -1,0 +1,24 @@
+<script>
+  const gift = document.getElementById("gift");
+
+  function openGift() {
+    document.body.innerHTML = `
+      <h1 style="text-align:center; animation: pop 0.8s ease;">
+        🎉 HAPPY NEW YEAR 2026 🎉<br><br>
+        <span style="font-size:18px;">— Yug Patel 😎</span>
+      </h1>
+    `;
+    document.body.style.background =
+      "radial-gradient(circle, #ffcc00, #ff0066, #6600ff)";
+  }
+
+  gift.addEventListener("click", openGift);
+  gift.addEventListener("touchstart", openGift);
+</script>
+
+<style>
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+</style>
